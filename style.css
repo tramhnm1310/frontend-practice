@@ -112,10 +112,11 @@ main{
     flex-wrap: wrap;
     -moz-box-pack: center;
     justify-content: center;
+    padding: 100px 15px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .hero{
-        padding: 100px 15px;
+        padding: 50px 15px;
     }
 }
 
@@ -132,9 +133,21 @@ main{
     max-width: 600px;
     width: 100%;
 }
-@media (min-width: 768px) {
+.hero-sub h1{
+    font-size: 55px;
+    display: initial;
+    line-height: 1.1;
+}
+.hero-sub p{
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0px;
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
     .hero-sub h1{
-        font-size: 55px;
+        font-size: 75px;
         display: initial;
         line-height: 1.1;
     }
@@ -187,16 +200,22 @@ main{
     position: relative;
     max-width: 100%;
 }
+@media (max-width:768px) {
+    .heroInner .hero-img{
+        display: none;
+    }
+}
 
 /* LEARNMORE */
 .learnmore{
     width: 100%;
     border-top: 2px solid;
     scroll-margin-top: 60px;
+    padding: 50px 0px;
 }
-@media (min-width:768px) {
+@media (max-width:768px) {
     .learnmore{
-        padding: 50px 0px;
+        padding: 40px 0px;
     }
 }
 .learnmore h1{
@@ -211,7 +230,7 @@ main{
     line-height: 1.1;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .learnmore .h1{
         font-size: 36px;
     }
@@ -229,9 +248,9 @@ main{
     margin: 75px auto 50px;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .features{
-        margin: 75px auto 50px;
+        margin: 45px auto 50px;
     }
 }
 
@@ -254,7 +273,7 @@ main{
     border: 2px solid black;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .feature{
         flex-direction: row;
     }
@@ -263,8 +282,10 @@ main{
 .learnmore .features .featureInner .feature .f-img{
     height: auto;
     width: 100%;
+    max-width: 100px;
+    margin-right: 30px;
 }
-@media (min-width:768px) {
+@media (max-width:768px) {
     .feature .f-img{
         max-width: 100px;
         margin-right: 30px;
