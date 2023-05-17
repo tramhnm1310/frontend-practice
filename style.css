@@ -81,10 +81,13 @@ nav{
     font-weight: 600;
     transition: color 0.2s ease 0;
 }
+.innerNav .menuLinks a:hover{
+    text-decoration: underline;
+}
 /* TITLE */
 .menutitle{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 23px;
 }
 .menutitle a{
     text-decoration: none;
@@ -92,6 +95,35 @@ nav{
     color: rgb(51,51,51);
     font-weight: 600;
     transition: color 0.2s ease 0;
+}
+@media only screen and (max-width: 900px) {
+    .MobileNav{
+        display: block;
+        cursor: pointer;
+    }
+    .MobileNav button{
+        width: 30px;
+        height: 30px;
+        margin: 0px 15px;
+    }
+    .menuLinks{
+        display: none;
+    }
+    .menuNav{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 25%;
+        background: white;
+        transition: 0.2s;
+    }
+    .{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+    }
 }
 /* MAIN */
 main{
@@ -134,7 +166,7 @@ main{
     width: 100%;
 }
 .hero-sub h1{
-    font-size: 55px;
+    font-size: 65px;
     display: initial;
     line-height: 1.1;
 }
@@ -145,9 +177,9 @@ main{
     font-size: 23px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .hero-sub h1{
-        font-size: 75px;
+        font-size: 45px;
         display: initial;
         line-height: 1.1;
     }
@@ -155,7 +187,7 @@ main{
         width: 100%;
         max-width: 500px;
         margin: 20px 0px;
-        font-size: 23px;
+        font-size: 20px;
     }
 }
 .hero .heroLinks-container{
@@ -174,6 +206,11 @@ main{
     color: rgb(51,51,51);
     font-weight: 600;
 }
+.hero-link:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
 .hero .heroLinks-container .info-link{
     border: 2px solid black;
     border-radius: 0px;
@@ -185,6 +222,11 @@ main{
     margin-left: 15px;
     color: rgb(51,51,51);
     font-weight: 600;
+}
+.hero .heroLinks-container .info-link:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
 }
 .heroInner .hero-img{
     box-sizing: border-box;
