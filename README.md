@@ -1,1 +1,1 @@
-# frontend-practice recreate from this website: https://www.frontendpractice.com/
+# frontend-practice landing page recreate from this website: https://www.frontendpractice.com/
